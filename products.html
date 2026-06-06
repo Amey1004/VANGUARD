@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products — Vanguard Global Trade | Commodity Registry</title>
+    <meta name="description" content="Browse our full trade index: Premium Agro-Commodities (spices, grains, tea), Sustainable Industrial Minerals (silica sand, kaolin clay), and Organic Textiles (cotton yarn, jute).">
+
+    <!-- Compiled Tailwind CSS -->
+    <link rel="stylesheet" href="css/tailwind.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS (Only Essentials) -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-slate-50 text-slate-900 font-manrope font-light overflow-x-hidden pt-20">
+
+<!-- ══ NAVIGATION ════════════════════════════════════════ -->
+<nav id="nav" class="fixed top-0 w-full z-[100] bg-white border-b border-slate-100 shadow-sm py-4 px-6 md:px-14 flex items-center justify-between transition-all duration-300">
+    <a href="index.html" class="shrink-0 transition-opacity hover:opacity-80">
+        <svg class="h-10 w-auto" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 20C10 9.5 18.5 1 29 1C39.5 1 48 9.5 48 20C48 30.5 39.5 39 29 39C18.5 39 10 30.5 10 20Z" stroke="#c5a059" stroke-width="2.5" />
+            <path d="M18 15L29 30L40 15" stroke="#1a365d" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M29 1V39" stroke="#c5a059" stroke-width="1" stroke-dasharray="2 2" />
+            <path d="M10 20H48" stroke="#c5a059" stroke-width="1" stroke-dasharray="2 2" />
+            <text x="58" y="22" font-family="'Bricolage Grotesque', sans-serif" font-weight="800" font-size="14" fill="#1a365d">VANGUARD</text>
+            <text x="58" y="34" font-family="'Manrope', sans-serif" font-weight="700" font-size="8.5" letter-spacing="0.22em" fill="#c5a059">GLOBAL TRADE</text>
+        </svg>
+    </a>
+
+    <ul class="hidden md:flex items-center gap-10">
+        <li>
+            <a href="index.html" class="text-slate-600 hover:text-vkan-blue-vibe text-base font-medium transition-colors font-grotesque">Home</a>
+        </li>
+        <li>
+            <a href="about.html" class="text-slate-600 hover:text-vkan-blue-vibe text-base font-medium transition-colors font-grotesque">About</a>
+        </li>
+        <li class="relative group py-2">
+            <a href="products.html" class="flex items-center gap-1 text-vkan-blue-vibe font-bold text-base tracking-tight border-b-2 border-vkan-blue-vibe pb-1 font-grotesque cursor-pointer">
+                Products
+                <svg class="w-3 h-3 text-slate-400 group-hover:text-vkan-blue-vibe transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </a>
+            <div class="absolute left-0 top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                <ul class="bg-white border border-slate-100 shadow-xl rounded-2xl p-2 w-48 flex flex-col gap-1 mt-2">
+                    <li><a href="products.html#agro" class="block px-4 py-2 text-sm font-bold text-slate-600 hover:text-vkan-blue-vibe hover:bg-slate-50 rounded-xl transition-colors font-grotesque">Agro Commodities</a></li>
+                    <li><a href="products.html#minerals" class="block px-4 py-2 text-sm font-bold text-slate-600 hover:text-vkan-blue-vibe hover:bg-slate-50 rounded-xl transition-colors font-grotesque">Sustainable Minerals</a></li>
+                    <li><a href="products.html#textiles" class="block px-4 py-2 text-sm font-bold text-slate-600 hover:text-vkan-blue-vibe hover:bg-slate-50 rounded-xl transition-colors font-grotesque">Organic Textiles</a></li>
+                    <li><a href="products.html#chemicals" class="block px-4 py-2 text-sm font-bold text-slate-600 hover:text-vkan-blue-vibe hover:bg-slate-50 rounded-xl transition-colors font-grotesque">Industrial Chemicals</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="contact.html" class="text-slate-600 hover:text-vkan-blue-vibe text-base font-medium transition-colors font-grotesque">Contact</a>
+        </li>
+    </ul>
+
+    <div class="hidden lg:flex items-center gap-4">
+        <a href="contact.html" class="bg-slate-50 text-slate-600 hover:bg-slate-100 px-5 py-2.5 rounded-full text-sm font-bold transition-all border border-slate-200">Contact Us</a>
+        <a href="inquiry.html" class="btn btn-blue py-2.5 px-6 text-sm shadow-lg shadow-blue-500/10">Get a Quote →</a>
+    </div>
+
+    <button id="hamBtn" class="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 focus:outline-none">
+        <span class="ham-line w-6 h-0.5 bg-vkan-blue-dark"></span>
+        <span class="ham-line w-6 h-0.5 bg-vkan-blue-dark"></span>
+        <span class="ham-line w-6 h-0.5 bg-vkan-blue-dark"></span>
+    </button>
+</nav>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobMenu" class="fixed inset-0 z-[90] bg-white translate-x-full transition-transform duration-500 flex flex-col justify-start pt-28 pb-12 px-8 gap-8 overflow-y-auto">
+    <a href="index.html" class="text-3xl font-extrabold font-grotesque text-slate-800 hover:text-vkan-blue-vibe transition-colors">Home</a>
+    <a href="about.html" class="text-3xl font-extrabold font-grotesque text-slate-800 hover:text-vkan-blue-vibe transition-colors">About</a>
+    <!-- Products accordion -->
+    <div class="flex flex-col gap-0 border-l-2 border-slate-100 pl-0">
+        <button id="mobProductsBtn" onclick="toggleMobProducts()" class="flex items-center justify-between text-3xl font-extrabold font-grotesque text-vkan-blue-vibe w-full text-left">
+            Products
+            <svg id="mobProductsChevron" class="w-6 h-6 text-vkan-blue-vibe transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+            </svg>
+        </button>
+        <div id="mobProductsSub" class="flex flex-col gap-4 pl-5 border-l-2 border-vkan-blue-vibe/20 mt-5 hidden">
+            <a href="products.html#agro" class="flex items-center gap-3 font-bold font-grotesque text-slate-600 hover:text-vkan-blue-vibe transition-colors">
+                <span class="inline-flex items-center px-2.5 py-1 bg-vkan-blue-vibe/10 text-vkan-blue-vibe text-[9px] font-bold uppercase tracking-widest rounded-full">01</span>
+                Agro Commodities
+            </a>
+            <a href="products.html#minerals" class="flex items-center gap-3 font-bold font-grotesque text-slate-600 hover:text-vkan-green-vibe transition-colors">
+                <span class="inline-flex items-center px-2.5 py-1 bg-vkan-green-vibe/10 text-vkan-green-vibe text-[9px] font-bold uppercase tracking-widest rounded-full">02</span>
+                Sustainable Minerals
+            </a>
+            <a href="products.html#textiles" class="flex items-center gap-3 font-bold font-grotesque text-slate-600 hover:text-blue-500 transition-colors">
+                <span class="inline-flex items-center px-2.5 py-1 bg-blue-100 text-blue-500 text-[9px] font-bold uppercase tracking-widest rounded-full">03</span>
+                Organic Textiles
+            </a>
+            <a href="products.html#chemicals" class="flex items-center gap-3 font-bold font-grotesque text-slate-600 hover:text-orange-500 transition-colors">
+                <span class="inline-flex items-center px-2.5 py-1 bg-orange-100 text-orange-500 text-[9px] font-bold uppercase tracking-widest rounded-full">↗</span>
+                Industrial Chemicals
+            </a>
+        </div>
+    </div>
+    <a href="contact.html" class="text-3xl font-extrabold font-grotesque text-slate-800 hover:text-vkan-blue-vibe transition-colors">Contact</a>
+    <div class="mt-4 flex flex-col gap-4">
+        <a href="inquiry.html" class="btn btn-blue">Get a Quote</a>
+    </div>
+</div>
+
+    <!-- ══ PAGE HERO ═════════════════════════════════════════ -->
+    <header class="bg-slate-900 py-28 px-6 md:px-14 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_80%_40%,#1151A0_0%,transparent_50%)] opacity-20">
+        </div>
+        <div class="max-w-7xl mx-auto relative z-10 text-center md:text-left">
+            <span class="lbl bg-white/10 text-white/95 border-none">Product Registry</span>
+            <h1 class="font-grotesque text-5xl md:text-7xl font-extrabold text-white leading-tight tracking-tight mb-6">
+                Our Range — Premium Commodities & <br><span
+                    class="text-vkan-green-vibe italic underline decoration-2 underline-offset-8">Industrial Raw Materials.</span>
+            </h1>
+            <p class="text-white/80 text-lg md:text-xl font-medium max-w-xl leading-relaxed mx-auto md:mx-0 mb-8">
+                Custom parameters, laboratory COA testing, and pre-shipment cargo samples available upon query.
+            </p>
+            <div class="flex flex-wrap items-center justify-center md:justify-start gap-4">
+                <a href="inquiry.html" class="btn btn-blue py-3 px-8 text-sm shadow-lg shadow-blue-500/20">Get a Quote
+                    →</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ══ PRODUCT NAV TABS ═══════════════════════════════════ -->
+    <nav id="prodNav"
+        class="sticky top-20 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 py-3 px-4 md:px-14">
+        <div
+            class="flex items-center justify-start md:justify-center gap-2 md:gap-3 overflow-x-auto whitespace-nowrap scrollbar-hide max-w-7xl mx-auto">
+            <a href="#agro" data-section="agro"
+                class="prod-tab group flex items-center gap-2 px-3 md:px-4 py-2 rounded-full border-2 border-transparent transition-all duration-300 text-slate-400 hover:text-vkan-blue-vibe">
+                <span
+                    class="inline-flex items-center justify-center w-5 h-5 md:w-6 md:h-6 bg-vkan-blue-vibe/10 text-vkan-blue-vibe text-[8px] font-black rounded-full shrink-0 transition-colors">01</span>
+                <span class="text-xs md:text-sm font-bold uppercase tracking-widest">Agro Commodities</span>
+            </a>
+            <span class="text-slate-200 font-light hidden md:inline">·</span>
+            <a href="#minerals" data-section="minerals"
+                class="prod-tab group flex items-center gap-2 px-3 md:px-4 py-2 rounded-full border-2 border-transparent transition-all duration-300 text-slate-400 hover:text-vkan-green-vibe">
+                <span
+                    class="inline-flex items-center justify-center w-5 h-5 md:w-6 md:h-6 bg-vkan-green-vibe/10 text-vkan-green-vibe text-[8px] font-black rounded-full shrink-0 transition-colors">02</span>
+                <span class="text-xs md:text-sm font-bold uppercase tracking-widest">Sustainable Minerals</span>
+            </a>
+            <span class="text-slate-200 font-light hidden md:inline">·</span>
+            <a href="#textiles" data-section="textiles"
+                class="prod-tab group flex items-center gap-2 px-3 md:px-4 py-2 rounded-full border-2 border-transparent transition-all duration-300 text-slate-400 hover:text-blue-500">
+                <span
+                    class="inline-flex items-center justify-center w-5 h-5 md:w-6 md:h-6 bg-blue-100 text-blue-500 text-[8px] font-black rounded-full shrink-0 transition-colors">03</span>
+                <span class="text-xs md:text-sm font-bold uppercase tracking-widest">Organic Textiles</span>
+            </a>
+            <span class="text-slate-200 font-light hidden md:inline">·</span>
+            <a href="#chemicals" data-section="chemicals"
+                class="prod-tab group flex items-center gap-2 px-3 md:px-4 py-2 rounded-full border-2 border-transparent transition-all duration-300 text-slate-400 hover:text-orange-500">
+                <span
+                    class="inline-flex items-center justify-center w-5 h-5 md:w-6 md:h-6 bg-orange-100 text-orange-500 text-[8px] font-black rounded-full shrink-0 transition-colors">↗</span>
+                <span class="text-xs md:text-sm font-bold uppercase tracking-widest">Industrial Chem</span>
+            </a>
+        </div>
+    </nav>
+
+    <style>
+        .prod-tab {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .prod-tab:hover {
+            transform: translateY(-1px);
+        }
+
+        .prod-tab:active {
+            transform: translateY(1px) scale(0.98);
+        }
+
+        .prod-tab.tab-active-blue {
+            color: #1A365D;
+            border-color: rgba(26, 54, 93, 0.2);
+            background: rgba(26, 54, 93, 0.05);
+        }
+
+        .prod-tab.tab-active-green {
+            color: #C5A059;
+            border-color: rgba(197, 160, 89, 0.2);
+            background: rgba(197, 160, 89, 0.05);
+        }
+
+        .prod-tab.tab-active-blue2 {
+            color: #3b82f6;
+            border-color: rgba(59, 130, 246, 0.2);
+            background: rgba(59, 130, 246, 0.05);
+        }
+
+        .prod-tab.tab-active-orange {
+            color: #f97316;
+            border-color: rgba(249, 115, 22, 0.2);
+            background: rgba(249, 115, 22, 0.05);
+        }
+    </style>
+
+    <!-- ══ AGRO COMMODITIES ══════════════════════════════════ -->
+    <section id="agro" class="py-24 px-6 md:px-14 border-b border-slate-100 scroll-mt-36">
+        <div class="max-w-7xl mx-auto">
+            <!-- Header -->
+            <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-16 px-4">
+                <div class="reveal">
+                    <span class="lbl bg-vkan-blue-vibe/10 text-vkan-blue-vibe">Product 01 of 03</span>
+                    <h2 class="font-grotesque text-4xl md:text-6xl font-extrabold text-vkan-blue-dark mb-4">Agro Commodities</h2>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span
+                            class="text-xs uppercase font-bold tracking-widest px-3 py-1 bg-slate-50 text-slate-500 rounded-md">Food & Produce</span>
+                        <span
+                            class="text-xs uppercase font-bold tracking-widest px-3 py-1 bg-slate-50 text-slate-500 rounded-md">Organic & SGS Audited</span>
+                    </div>
+                </div>
+                <div class="max-w-md reveal" style="transition-delay: 100ms">
+                    <p class="text-slate-500 font-light text-base leading-relaxed mb-6">
+                        <strong class="text-vkan-blue-dark font-bold">Origin: Certified Sourcing Collectives.</strong> <br>
+                        Premium quality agricultural exports including spices (cardamom, pepper), grains (basmati rice), coffee, and tea. Double-cleaned, trace-coded, and packed under temperature-controlled hygiene to guarantee long shelf-life and grade conformity.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="inquiry.html"
+                            class="btn btn-blue py-3 px-8 text-sm shadow-lg shadow-blue-500/10">Inquire Samples</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 px-4 reveal">
+                <!-- Specs Panel -->
+                <div class="bg-vkan-blue-dark p-10 rounded-[40px] text-white">
+                    <h4 class="font-bold text-xl mb-8">Technical Parameters</h4>
+                    <div class="space-y-4">
+                        <div class="spec-row border-white/10 relative">
+                            <span class="spec-label text-white/50">Moisture</span>
+                            <span class="spec-value text-white">≤ 11% (Crops)</span>
+                        </div>
+                        <div class="spec-row border-white/10 relative">
+                            <span class="spec-label text-white/50">Purity</span>
+                            <span class="spec-value text-white">≥ 99.0%</span>
+                        </div>
+                        <div class="spec-row border-white/10 relative">
+                            <span class="spec-label text-white/50">Foreign Matter</span>
+                            <span class="spec-value text-white">≤ 0.50%</span>
+                        </div>
+                        <div class="spec-row border-white/10 relative">
+                            <span class="spec-label text-white/50">Insect Damage</span>
+                            <span class="spec-value text-white">Absent (0%)</span>
+                        </div>
+                        <div class="spec-row border-transparent pb-0 relative">
+                            <span class="spec-label text-white/50">Standards</span>
+                            <span class="spec-value text-white text-right">FDA Compliant<br>SGS Audited</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Applications Panel -->
+                <div
+                    class="bg-slate-50 p-10 rounded-[40px] lg:col-span-2 border border-slate-100 flex flex-col md:flex-row gap-12">
+                    <div class="flex-1">
+                        <h4 class="font-bold text-xl text-vkan-blue-dark mb-6">Trade Categories</h4>
+                        <ul class="space-y-3">
+                            <li class="flex gap-3 text-base text-slate-500"><span
+                                    class="text-vkan-blue-vibe font-bold">✓</span> Green Cardamom & Black Pepper</li>
+                            <li class="flex gap-3 text-base text-slate-500"><span
+                                    class="text-vkan-blue-vibe font-bold">✓</span> Premium Long Grain Basmati Rice</li>
+                            <li class="flex gap-3 text-base text-slate-500"><span
+                                    class="text-vkan-blue-vibe font-bold">✓</span> Raw & Roasted Coffee Beans</li>
+                            <li class="flex gap-3 text-base text-slate-500"><span
+                                    class="text-vkan-blue-vibe font-bold">✓</span> Assam & Darjeeling Tea Leaves</li>
+                            <li class="flex gap-3 text-base text-slate-500"><span
+                                    class="text-vkan-blue-vibe font-bold">✓</span> Oil Seeds & Pulses</li>
+                        </ul>
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="font-bold text-xl text-vkan-blue-dark mb-6">Packaging Options</h4>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex gap-3 text-base text-slate-500"><span
+                                    class="text-vkan-green-vibe font-bold">✓</span> 25kg PP / Jute Bags</li>
+                            <li class="flex gap-3 text-base text-slate-500"><span
+                                    class="text-vkan-green-vibe font-bold">✓</span> 500kg / 1000kg FIBC Bulk</li>
+                            <li class="flex gap-3 text-base text-slate-500"><span
+                                    class="text-vkan-green-vibe font-bold">✓</span> Vacuum Insulated Packaging</li>
+                        </ul>
+
+                        <h5 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Key Attributes</h5>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="text-sm bg-white border border-slate-200 px-3 py-1.5 rounded-md text-slate-600 font-medium">Non-GMO Origin</span>
+                            <span
+                                class="text-sm bg-white border border-slate-200 px-3 py-1.5 rounded-md text-slate-600 font-medium">Phytosanitary Cleaned</span>
+                            <span
+                                class="text-sm bg-white border border-slate-200 px-3 py-1.5 rounded-md text-slate-600 font-medium">Trace-Coded</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ SUSTAINABLE MINERALS ══════════════════════════════ -->
+    <section id="minerals" class="py-24 px-6 md:px-14 border-b border-slate-100 scroll-mt-36 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <!-- Header -->
+            <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-16 px-4">
+                <div class="reveal">
+                    <span class="lbl bg-vkan-green-vibe/10 text-vkan-green-vibe">Product 02 of 03</span>
+                    <h2 class="font-grotesque text-4xl md:text-6xl font-extrabold text-vkan-blue-dark mb-4">Sustainable Minerals</h2>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span
+                            class="text-xs uppercase font-bold tracking-widest px-3 py-1 bg-white border border-slate-100 text-slate-500 rounded-md">Industrial Minerals</span>
+                        <span
+                            class="text-xs uppercase font-bold tracking-widest px-3 py-1 bg-white border border-slate-100 text-slate-500 rounded-md">High Purity Grades</span>
+                    </div>
+                </div>
+                <div class="max-w-md reveal" style="transition-delay: 100ms">
+                    <p class="text-slate-500 font-light text-base leading-relaxed mb-6">
+                        <strong class="text-vkan-blue-dark font-bold">Origin: Refined Mineral Quarries.</strong> <br>
+                        Exporting high-purity silica sand, kaolin clay, bentonite, and organic industrial minerals. Laboratory-controlled grading and packaging ensure consistency for float glass, fine ceramic glaze, and paint formulation.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="inquiry.html"
+                            class="btn btn-green py-3 px-8 text-sm shadow-lg shadow-green-500/10">Inquire Specifications</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 px-4 reveal">
+                <!-- Specs Panel -->
+                <div class="bg-vkan-green-dark p-10 rounded-[40px] text-white">
+                    <h4 class="font-bold text-xl mb-8">Technical Parameters</h4>
+                    <div class="space-y-4">
+                        <div class="spec-row border-white/10 relative">
+                            <span class="spec-label text-white/50">SiO2 Purity</span>
+                            <span class="spec-value text-white">≥ 99.8% (Silica)</span>
+                        </div>
+                        <div class="spec-row border-white/10 relative">
+                            <span class="spec-label text-white/50">Fe2O3 Content</span>
+                            <span class="spec-value text-white">≤ 0.015%</span>
+                        </div>
+                        <div class="spec-row border-white/10 relative">
+                            <span class="spec-label text-white/50">Whiteness</span>
+                            <span class="spec-value text-white">≥ 90% (Kaolin)</span>
+                        </div>
+                        <div class="spec-row border-white/10 relative">
+                            <span class="spec-label text-white/50">Moisture Content</span>
+                            <span class="spec-value text-white">≤ 0.50% (Dry Sand)</span>
+                        </div>
+                        <div class="spec-row border-transparent pb-0 relative">
+                            <span class="spec-label text-white/50">Sizing Mesh</span>
+                            <span class="spec-value text-white text-right">30 - 100 Mesh<br>(Granular)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Applications Panel -->
+                <div
+                    class="bg-white p-10 rounded-[40px] lg:col-span-2 border border-slate-100 flex flex-col md:flex-row gap-12">
+                    <div class="flex-1">
+                        <h4 class="font-bold text-xl text-vkan-blue-dark mb-6">Mineral Categories</h4>
+                        <ul class="space-y-3">
+                            <li class="flex gap-3 text-base text-slate-500"><span
+                                    class="text-vkan-blue-vibe font-bold">✓</span> Glass-Grade Silica Sand</li>
+                            <li class="flex gap-3 text-base text-slate-500"><span
+                                    class="text-vkan-blue-vibe font-bold">✓</span> Ceramic-Grade Kaolin Clay</li>
+                            <li class="flex gap-3 text-base text-slate-500"><span
+                                    class="text-vkan-blue-vibe font-bold">✓</span> Foundry Bentonite Clay</li>
+                            <li class="flex gap-3 text-base text-slate-500"><span
+                                    class="text-vkan-blue-vibe font-bold">✓</span> Talc & Dolomite Powder</li>
+                        </ul>
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="font-bold text-xl text-vkan-blue-dark mb-6">Industrial Uses</h4>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex gap-3 text-base text-slate-500"><span
+                                    class="text-vkan-green-vibe font-bold">✓</span> Float Glass & Containers</li>
+                            <li class="flex gap-3 text-base text-slate-500"><span
+                                    class="text-vkan-green-vibe font-bold">✓</span> Fine Pottery & Glazes</li>
+                            <li class="flex gap-3 text-base text-slate-500"><span
+                                    class="text-vkan-green-vibe font-bold">✓</span> Industrial Paint Fillers</li>
+                        </ul>
+
+                        <h5 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Key Attributes</h5>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="text-sm bg-slate-50 border border-slate-100 px-3 py-1.5 rounded-md text-slate-600 font-medium">High Thermal Stability</span>
+                            <span
+                                class="text-sm bg-slate-50 border border-slate-100 px-3 py-1.5 rounded-md text-slate-600 font-medium">Granular Precision</span>
+                            <span
+                                class="text-sm bg-slate-50 border border-slate-100 px-3 py-1.5 rounded-md text-slate-600 font-medium">GHS Compliant</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ ORGANIC TEXTILES ═════════════════════════════════ -->
+    <section id="textiles" class="py-24 px-6 md:px-14 border-b border-slate-100 scroll-mt-36">
+        <div class="max-w-7xl mx-auto">
+            <!-- Header -->
+            <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-16 px-4">
+                <div class="reveal">
+                    <span class="lbl bg-blue-400/10 text-blue-500">Product 03 of 03</span>
+                    <h2 class="font-grotesque text-4xl md:text-6xl font-extrabold text-vkan-blue-dark mb-4">Organic Textiles</h2>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span
+                            class="text-xs uppercase font-bold tracking-widest px-3 py-1 bg-slate-50 text-slate-500 rounded-md">Cotton & Fibres</span>
+                        <span
+                            class="text-xs uppercase font-bold tracking-widest px-3 py-1 bg-slate-50 text-slate-500 rounded-md">GOTS & Oeko-Tex Certified</span>
+                    </div>
+                </div>
+                <div class="max-w-md reveal" style="transition-delay: 100ms">
+                    <p class="text-slate-500 font-light text-base leading-relaxed mb-6">
+                        <strong class="text-vkan-blue-dark font-bold">Origin: GOTS Audited Spinner Mills.</strong> <br>
+                        Ethically sourced organic cotton yarns, raw jute fibres, and flax fibers. Checked for tensile strength, staple length, and pesticide-free purity. Configured for high-end weaving and knitting operations.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="inquiry.html" class="btn bg-blue-500 text-white hover:bg-blue-600 py-3 px-8 text-sm shadow-lg shadow-blue-500/10">Inquire Quote</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 px-4 reveal">
+                <!-- Specs Panel -->
+                <div class="bg-blue-500 p-10 rounded-[40px] text-white">
+                    <h4 class="font-bold text-xl mb-8">Technical Parameters</h4>
+                    <div class="space-y-4">
+                        <div class="spec-row border-white/10 relative">
+                            <span class="spec-label text-white/50">Cotton Count</span>
+                            <span class="spec-value text-white">20s - 40s (Ring Spun)</span>
+                        </div>
+                        <div class="spec-row border-white/10 relative">
+                            <span class="spec-label text-white/50">Jute Grading</span>
+                            <span class="spec-value text-white">TD1 - TD5 Export</span>
+                        </div>
+                        <div class="spec-row border-white/10 relative">
+                            <span class="spec-label text-white/50">Tensile Strength</span>
+                            <span class="spec-value text-white">High tenacity</span>
+                        </div>
+                        <div class="spec-row border-white/10 relative">
+                            <span class="spec-label text-white/50">Staple Length</span>
+                            <span class="spec-value text-white">≥ 28.5 mm</span>
+                        </div>
+                        <div class="spec-row border-transparent pb-0 relative">
+                            <span class="spec-label text-white/50">Certifications</span>
+                            <span class="spec-value text-white text-right">GOTS, Oeko-Tex 100</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Applications Panel -->
+                <div
+                    class="bg-slate-50 p-10 rounded-[40px] lg:col-span-2 border border-slate-100 flex flex-col md:flex-row gap-12">
+                    <div class="flex-1">
+                        <h4 class="font-bold text-xl text-vkan-blue-dark mb-6">Fiber Range</h4>
+                        <ul class="space-y-3">
+                            <li class="flex gap-3 text-base text-slate-500"><span
+                                    class="text-blue-500 font-bold">✓</span> Combed Organic Cotton Yarn</li>
+                            <li class="flex gap-3 text-base text-slate-500"><span
+                                    class="text-blue-500 font-bold">✓</span> Carded Cotton Knitting Yarn</li>
+                            <li class="flex gap-3 text-base text-slate-500"><span
+                                    class="text-blue-500 font-bold">✓</span> Long-Staple Raw Jute Fibres</li>
+                            <li class="flex gap-3 text-base text-slate-500"><span
+                                    class="text-blue-500 font-bold">✓</span> Natural Flax & Linen Threads</li>
+                        </ul>
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="font-bold text-xl text-vkan-blue-dark mb-6">Weaving Applications</h4>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex gap-3 text-base text-slate-500"><span
+                                    class="text-blue-500 font-bold">✓</span> Apparel Weaving & Knitting</li>
+                            <li class="flex gap-3 text-base text-slate-500"><span
+                                    class="text-blue-500 font-bold">✓</span> Burlap Bags & Technical Packaging</li>
+                            <li class="flex gap-3 text-base text-slate-500"><span
+                                    class="text-blue-500 font-bold">✓</span> Home Furnishings</li>
+                        </ul>
+
+                        <h5 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Key Attributes</h5>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="text-sm bg-white border border-slate-200 px-3 py-1.5 rounded-md text-slate-600 font-medium">Organic Sourced</span>
+                            <span
+                                class="text-sm bg-white border border-slate-200 px-3 py-1.5 rounded-md text-slate-600 font-medium">Pesticide Free</span>
+                            <span
+                                class="text-sm bg-white border border-slate-200 px-3 py-1.5 rounded-md text-slate-600 font-medium">High Tenacity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ SPECIALTY CHEMICALS ══════════════════════════════ -->
+    <section id="chemicals" class="py-24 px-6 md:px-14 bg-slate-900 relative overflow-hidden scroll-mt-36">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(43,127,232,0.15)_0%,transparent_50%)]">
+        </div>
+        <div class="max-w-7xl mx-auto relative z-10 flex flex-col md:flex-row gap-20 items-center">
+            <div class="w-full md:w-5/12 reveal">
+                <span class="lbl bg-white/10 text-white/50 border-none">Coming Soon</span>
+                <h2 class="font-grotesque text-4xl font-extrabold text-white mb-6 leading-snug">Specialty <br><span
+                        class="text-vkan-green-vibe italic">Chemicals.</span></h2>
+                <p class="text-white/40 text-base leading-relaxed mb-6 font-light">
+                    Vanguard is expanding its trade range to include non-hazardous organic compounds and water treatment coagulants.
+                </p>
+                <div class="flex items-center gap-3 text-sm font-bold text-white/30 uppercase tracking-widest mb-10">
+                    <span class="w-2 h-2 rounded-full bg-orange-400"></span> Development Phase
+                    <span class="ml-4 w-2 h-2 rounded-full bg-vkan-green-vibe"></span> GHS/UN Compliant
+                </div>
+                <a href="contact.html"
+                    class="btn btn-outline border-white/20 text-white hover:bg-white hover:text-vkan-blue-dark py-3 px-8 text-sm">Notify Me on Launch</a>
+            </div>
+
+            <div class="w-full md:w-7/12 grid grid-cols-1 sm:grid-cols-2 gap-6 px-4">
+                <!-- Product Categories -->
+                <div
+                    class="p-10 bg-white/5 backdrop-blur-md rounded-[40px] border border-white/10 reveal group hover:bg-white/10 transition-colors">
+                    <h4 class="text-xl font-bold mb-6 text-white">Product Categories <span
+                            class="text-white/30 text-base font-light">(Planned)</span></h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-white/70 text-base"><span
+                                class="text-orange-400">♦</span> Bio-Polymers & Emulsifiers</li>
+                        <li class="flex items-center gap-3 text-white/70 text-base"><span
+                                class="text-orange-400">♦</span> Water Treatment Coagulants</li>
+                        <li class="flex items-center gap-3 text-white/70 text-base"><span
+                                class="text-orange-400">♦</span> Organic Adhesives & Glues</li>
+                    </ul>
+                </div>
+
+                <!-- Regulatory -->
+                <div class="p-10 bg-white/5 backdrop-blur-md rounded-[40px] border border-white/10 reveal group hover:bg-white/10 transition-colors"
+                    style="transition-delay: 100ms">
+                    <h4 class="text-xl font-bold mb-6 text-white">Regulatory Processing</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 text-white/70 text-base leading-relaxed">
+                            <span class="text-vkan-green-vibe mt-1">✓</span> REACH registration under preparation
+                        </li>
+                        <li class="flex items-start gap-3 text-white/70 text-base leading-relaxed">
+                            <span class="text-vkan-green-vibe mt-1">✓</span> ADR / IMDG shipping protocols verified
+                        </li>
+                        <li class="flex items-start gap-3 text-white/70 text-base leading-relaxed">
+                            <span class="text-vkan-green-vibe mt-1">✓</span> Containment logistics partners secured
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ FOOTER ═══════════════════════════════════════════ -->
+    <footer class="bg-slate-900 text-white pt-24 pb-12 px-6 md:px-14">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 md:gap-16 mb-20 text-center md:text-left">
+                <div class="col-span-1 md:col-span-2 lg:col-span-2 flex flex-col items-center md:items-start text-center md:text-left">
+                    <svg class="h-10 w-auto mb-8" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 20C10 9.5 18.5 1 29 1C39.5 1 48 9.5 48 20C48 30.5 39.5 39 29 39C18.5 39 10 30.5 10 20Z" stroke="#c5a059" stroke-width="2.5" />
+                        <path d="M18 15L29 30L40 15" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M29 1V39" stroke="#c5a059" stroke-width="1" stroke-dasharray="2 2" />
+                        <path d="M10 20H48" stroke="#c5a059" stroke-width="1" stroke-dasharray="2 2" />
+                        <text x="58" y="22" font-family="'Bricolage Grotesque', sans-serif" font-weight="800" font-size="14" fill="#ffffff">VANGUARD</text>
+                        <text x="58" y="34" font-family="'Manrope', sans-serif" font-weight="700" font-size="8.5" letter-spacing="0.22em" fill="#c5a059">GLOBAL TRADE</text>
+                    </svg>
+                    <p class="text-white/80 font-light text-sm leading-relaxed max-w-sm mb-8">
+                        Ethically sourced agro-commodities, high-grade industrial minerals, and certified organic yarn, configured and routed for manufacturers worldwide.
+                    </p>
+                    <div class="flex flex-wrap items-center justify-center md:justify-start gap-3 opacity-60">
+                        <span class="text-[9px] font-bold uppercase tracking-[0.2em] px-2 py-1 bg-white/5 border border-white/50 rounded">SGS AUDITED</span>
+                        <span class="text-[9px] font-bold uppercase tracking-[0.2em] px-2 py-1 bg-white/5 border border-white/50 rounded">GOTS CERTIFIED</span>
+                        <span class="text-[9px] font-bold uppercase tracking-[0.2em] px-2 py-1 bg-white/5 border border-white/50 rounded">ISO : 9001</span>
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <h5 class="font-bold text-xs uppercase tracking-[0.3em] text-white/50 mb-8 font-grotesque">Divisions</h5>
+                    <ul class="flex flex-col gap-4 text-xs font-bold text-white/80 tracking-tight">
+                        <li><a href="products.html#agro" class="hover:text-white/60 transition-colors">Agro Commodities</a></li>
+                        <li><a href="products.html#minerals" class="hover:text-white/60 transition-colors">Sustainable Minerals</a></li>
+                        <li><a href="products.html#textiles" class="hover:text-white/60 transition-colors">Organic Textiles</a></li>
+                        <li><a href="products.html#chemicals" class="hover:text-white/60 transition-colors">Industrial Chemicals</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-1">
+                    <h5 class="font-bold text-xs uppercase tracking-[0.3em] text-white/50 mb-8 font-grotesque">Company</h5>
+                    <ul class="flex flex-col gap-4 text-xs font-bold text-white/80 tracking-tight">
+                        <li><a href="about.html#our-story" class="hover:text-white/60 transition-colors">Our History</a></li>
+                        <li><a href="about.html#export" class="hover:text-white/60 transition-colors">Export Regions</a></li>
+                        <li><a href="contact.html" class="hover:text-white/60 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-1 md:col-span-2 lg:col-span-1 flex flex-col items-center md:items-start text-center md:text-left">
+                    <h5 class="font-bold text-xs uppercase tracking-[0.3em] text-white/50 mb-8 font-grotesque">Contact</h5>
+                    <ul class="flex flex-col gap-4 text-xs font-bold text-white/80 tracking-tight items-center md:items-start">
+                        <li class="font-grotesque">+91 9876543210</li>
+                        <li class="font-grotesque">trade@vanguardglobaltrade.com</li>
+                        <li class="font-grotesque">info@vanguardglobaltrade.com</li>
+                        <li class="mt-4 flex gap-4 justify-center md:justify-start">
+                            <a href="#" class="w-10 h-10 rounded-full bg-white/5 border border-white/5 flex items-center justify-center hover:bg-vkan-blue-vibe transition-colors">
+                                <svg class="size-8" viewBox="0 0 24 24">
+                                    <path fill="#fff" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79, 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
+                                </svg>
+                            </a>
+                            <a href="mailto:trade@vanguardglobaltrade.com" class="w-10 h-10 rounded-full bg-white/5 border border-white/5 flex items-center justify-center hover:bg-vkan-blue-vibe transition-colors">
+                                <svg class="size-8" viewBox="0 0 24 24">
+                                    <path fill="#fff" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8.263-7.212q.137-.038.262-.113L19.6 8.25q.2-.125.3-.312t.1-.413q0-.5-.425-.75T18.7 6.8L12 11L5.3 6.8q-.45-.275-.875-.012T4 7.525q0 .25.1.438t.3.287l7.075 4.425q.125.075.263.113t.262.037t.263-.037" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-[10px] uppercase font-bold tracking-[0.4em] text-white/40 text-center md:text-left">©
+                    <span id="copyright-year">2026</span> Vanguard Global Trade. All rights reserved.</p>
+                <div class="flex justify-center md:justify-end">
+                    <span class="text-[10px] uppercase font-bold tracking-[0.4em] text-white/40 max-w-[200px] md:max-w-none text-center">"Design and Developed by <a class="font-grotesque text-gray-300" href="#" target="_blank">TECHSTRIX</a>"</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ══ SCRIPTS ═══════════════════════════════════════════ -->
+    <script src="js/main.js"></script>
+    <script>
+        // Product nav scroll-spy
+        const sections = [
+            { id: 'agro', cls: 'tab-active-blue' },
+            { id: 'minerals', cls: 'tab-active-green' },
+            { id: 'textiles', cls: 'tab-active-blue2' },
+            { id: 'chemicals', cls: 'tab-active-orange' },
+        ];
+
+        const allTabs = document.querySelectorAll('.prod-tab');
+
+        function setActiveTab(sectionId) {
+            allTabs.forEach(tab => {
+                tab.classList.remove('tab-active-blue', 'tab-active-green', 'tab-active-blue2', 'tab-active-orange');
+            });
+            const match = sections.find(s => s.id === sectionId);
+            if (match) {
+                const tab = document.querySelector(`.prod-tab[data-section="${match.id}"]`);
+                if (tab) {
+                    tab.classList.add(match.cls);
+
+                    // Smoothly auto-scroll the navigation container to center the active tab
+                    const container = tab.parentElement;
+                    if (container) {
+                        const scrollPos = tab.offsetLeft - (container.clientWidth / 2) + (tab.clientWidth / 2);
+                        container.scrollTo({ left: Math.max(0, scrollPos), behavior: 'smooth' });
+                    }
+                }
+            }
+        }
+
+        // Scroll-spy using IntersectionObserver
+        const secObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) setActiveTab(entry.target.id);
+            });
+        }, { rootMargin: '-30% 0px -60% 0px', threshold: 0 });
+
+        sections.forEach(s => {
+            const el = document.getElementById(s.id);
+            if (el) secObserver.observe(el);
+        });
+
+        // Set first tab active on load
+        setActiveTab('agro');
+    </script>
+</body>
+</html>
